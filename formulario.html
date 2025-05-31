@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fechar Pacote - Travel to Hell</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="inicio.html">Travel to Hell</a>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <h2 class="mb-4">Fechar Pacote</h2>
+    <form action="confirmacao.html" method="get">
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome Completo</label>
+        <input type="text" class="form-control" id="nome" name="nome" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="nascimento" class="form-label">Data de Nascimento</label>
+        <input type="date" class="form-control" id="nascimento" name="nascimento" required>
+      </div>
+      <div class="mb-3">
+        <label for="pacote" class="form-label">Pacote Escolhido</label>
+        <select class="form-select" id="pacote" name="pacote" required>
+          <option>França</option>
+          <option>Cancún</option>
+          <option>Londres</option>
+          <option>Dubai</option>
+          <option>Paris</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-success">Confirmar Compra</button>
+      <a href="inicio.html" class="btn btn-secondary">Voltar ao Início</a>
+    </form>
+  </main>
+
+  <footer class="text-center py-3 bg-dark text-light">
+    &copy; 2025 Travel to Hell - Todos os direitos reservados.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
